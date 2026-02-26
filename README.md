@@ -1,6 +1,6 @@
 # mini.zsh
 
-Collection of tidy but useful zsh plugins extracted from my dotfiles and
+Collection of tiny but useful zsh plugins extracted from my dotfiles and
 elsewhere.
 
 Where possible, the original source has been credited. If there is none, it
