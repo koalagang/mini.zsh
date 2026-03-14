@@ -21,18 +21,10 @@ precmd() {
     if ! builtin zle; then
         print -n "\e]133;D\e\\"
     fi
-    
-    # set window title to name of currently executed process
-    # source: https://codeberg.org/dnkl/foot/issues/872#issuecomment-296157
-    print -Pn "\e]0;zsh%L %(1j,%j job%(2j|s|); ,)%~\e\\"
 }
 
 preexec() {
     # pipe last command's output
     # source: https://codeberg.org/dnkl/foot/wiki#zsh-2
     print -n "\e]133;C\e\\"
-
-    # set window title
-    # source: https://codeberg.org/dnkl/foot/issues/872#issuecomment-296157
-    print -Pn "\e]0;${(q)1}\e\\"
 }
