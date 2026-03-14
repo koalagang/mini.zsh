@@ -10,5 +10,5 @@ source $ZDOTDIR/mini.zsh
 # NOTE: at the end of the file, you should declare the plugins you wish to use inside an array like so:
 # mini_zsh_plugins=(auto-ls stash fancy-ctrl-z copy-directory copy-buffer)
 for i in "${mini_zsh_plugins[@]}"; do
-    source "${0:A:h}/plugins/$i.zsh"
+    source "${0:A:h}/plugins/$i/$i.zsh"
 done
